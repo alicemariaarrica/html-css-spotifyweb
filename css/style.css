@@ -13,32 +13,68 @@
 }
 
 .container{
-    display: flex;
+    background-color: #080b12;
+    width:60px;
+    color: #080b12;
+
+   
+
 }
+
+.top-container{
+    background-color: #080b12;
+    width:100%;
+    color: #080b12;
+    height: 300px;
+    padding-top: 30px; 
+
+
+}
+.row{
+    
+}
+
+/*-------- section side-bar--------*/
+
+
+
+.header{
+
+    background-color: #080b12;
+}
+
 
 .sidebar{
     
+    padding-top: 20px; color: #000000;
     width:245px;
     background-color:#000000;
-
-    .menu{
-       
-        color:white
 
     
 }
 
-/*l'ho scritto fuori da .menu perchè all'interno non funzionava*/
+.logo{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px ;
+    max-width: 225px;
+    background-color: #000000;
+}
 
 .menu ul {
     list-style-type: none; /* Rimuove i puntini */
     padding: 10; /* Rimuove padding predefinito */
     margin-bottom: 100px;
+    color:white
+
 }
 
 
 li{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
+    color:white
+
    
 }
 
@@ -48,17 +84,21 @@ li{
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
+    color: #3c3c3c;
 }
 
 .menu li img {
     width: 20px; /* Dimensioni dell'icona */
     height: 20px;
     margin-right: 10px; /* Spazio tra l'icona e il testo */
+    color: #3c3c3c;
 }
-.content{
 
-    margin-top: 20 rem; /*perchè non funziona?*/
-    flex=1;
-    background-color:#080b12;
 
+
+
+.content {
+    margin-top: 20rem; /* Rimuovi lo spazio tra il numero e l'unità */
+    flex: 1; /* Usa i due punti per la proprietà 'flex' */
+    background-color: #080b12;
 }
