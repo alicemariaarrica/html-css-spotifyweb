@@ -1,0 +1,16 @@
+.body{
+    overflow: hidden;
+}
+
+.top-container{
+    display: flex;
+}
+
+.sidebar{
+    width:245px;
+    background-color:blue
+}
+
+.content{
+    flex=1;
+}
