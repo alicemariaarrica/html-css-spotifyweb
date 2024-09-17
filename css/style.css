@@ -1,16 +1,64 @@
+:root{
+
+    --primary-color: #141922; /*content-box*/
+    --secondary-color: #000000; /*nav-bar*/
+    --dark-gray: #3c3c3c; /*text-nav-bar*/
+    --dark-blue: #080b12; /*top-frame-bar*/
+
+}
+
+
 .body{
     overflow: hidden;
 }
 
-.top-container{
+.container{
     display: flex;
 }
 
 .sidebar{
+    
     width:245px;
-    background-color:blue
+    background-color:#000000;
+
+    .menu{
+       
+        color:white
+
+    
 }
 
+/*l'ho scritto fuori da .menu perchè all'interno non funzionava*/
+
+.menu ul {
+    list-style-type: none; /* Rimuove i puntini */
+    padding: 10; /* Rimuove padding predefinito */
+    margin-bottom: 100px;
+}
+
+
+li{
+    margin-top: 10px;
+   
+}
+
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.menu li img {
+    width: 20px; /* Dimensioni dell'icona */
+    height: 20px;
+    margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
 .content{
+
+    margin-top: 20 rem; /*perchè non funziona?*/
     flex=1;
+    background-color:#080b12;
+
 }
