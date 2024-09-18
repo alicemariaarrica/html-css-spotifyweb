@@ -8,6 +8,8 @@
 
 
 
+
+
 :root {
 
     --primary-color: #141922;
@@ -39,15 +41,9 @@
 }
    
 .nav-col-2 {
-    width: 200px;
+    width: 195px;
     background-color: #000000;
 
-}
-
-.col-8 {
-    flex-grow: 1;
-    background-color: #141922;
-    padding: 20px;
 }
 
 
@@ -61,20 +57,19 @@
 
 .sidebar {
 
-    padding-top: 20px;
+    padding-top: 15px;
     color: #000000;
-    width: 300px;
     background-color: #000000;
 
 
 }
 
 .logo {
-    padding-left: 20px;
+    
+    padding-left: 10px;
     padding-right: 20px;
-    padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 180px;
+    max-width: 160px;
     background-color: #000000;
 }
 
@@ -93,13 +88,15 @@ li {
 }
 
 
-.menu li {
+.menu li a{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     font-size: 16px;
     color: #3c3c3c;
+    padding-left: 25px;
 }
+
 
 .menu li img {
     height: 20px;
@@ -108,27 +105,37 @@ li {
     color: #3c3c3c;
 }
 
+
+
 /*------section top-button--------*/
 
+
+.col-8 {
+    flex-grow: 1;
+    background-color: #141922;
+    padding: 0px;
+}
+
+
 .top-bar {
+    font-family: 'Montserrat';
     background-color: #000000;
     display: flex;
     justify-content: flex-end;
-    padding bottom: 20px;
-
-    height: 100px;
+    padding-bottom: 20px;
+    border: 40px;
+    height: 55px;
 }
 
 
 
-
 .upgrade-btn {
+    font-size: 12px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: smaller;
-    font-weight: 600;
     background-color: #000000;
-    border-radius: 20px;
+    border-radius: 2rem;
+    padding: 12px;
+    border-color: white;
 }
 
 
@@ -155,64 +162,109 @@ li {
 /*-------------section content ----------------*/
 
 .content-title {
+    
     color: white;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     padding-bottom: 20px;
-    padding left: 50px;
+    padding-left: 50px;
 
 }
 
 /*section card*/
 
-* {
-    font-size: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+.col-2 {
+    flex: 1 1 calc((100% / 6) - 20px); /* Ridimensiona automaticamente su schermi piccoli */
+    max-width: calc((100% / 6) - 20px);
 }
 
-p {
-    text-align: center;
+* {
+    
+    font-family: 'Montserrat';
 }
+
+
 
 .content {
-
-    display flex-wrap: ;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #141922;
 }
 
 
+
+
+
+/* Card base styles */
 .card {
-    width: 130px;
+    width: 150px;
     position: relative;
-    /*y*/
     text-align: center;
     overflow: hidden;
+    background-color: 
+    border-radius: 8px;
+    padding: 10px;
 }
 
+/* Container for the image and play icon */
 .img-container {
     position: relative;
-    /*y*/
-    display: inline-block;
-    /*y*/
-
 }
 
+/* The album image */
 .card img {
     width: 100%;
-
-
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
 
 }
+
+.play-icon img {
+    width: 50px; /* Imposta la dimensione dell'icona */
+    height: 50px;
+    background-color: transparent; /* Assicurati che lo sfondo sia trasparente */
+}
+
+/* Default hidden state for the play icon */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 50px; /* Dimensione dell'icona play */
+    height: 50px;
+  
+}
+
+/* Hover effect: the play icon appears and the image slightly zooms */
+.img-container:hover .play-icon {
+    opacity: 1; /* Mostra l'icona play */
+    
+}
+
+.img-container:hover img {
+    transform: scale(1.05); /* Leggero zoom sull'immagine */
+   
+}
+
 
 .card p {
     color: white;
 }
 
 
-.card img:hover {
+.card:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 
 
+}
+
+
+.title{
+    font-size: 14px;
 }
