@@ -20,6 +20,7 @@ c
     /*text-nav-bar*/
     --dark-blue: #080b12;
     /*top-frame-bar*/
+    --subtitle: #606368;
 
 }
 
@@ -112,6 +113,14 @@ li {
     color: white
 }
 
+.create a{
+    text-align: start;
+    font-size: 15px;
+    font-weight:bolder;
+    text-decoration: none;
+    color:#3c3c3c;
+    
+}
 
 .playlist li a{
     text-align: start;
@@ -122,7 +131,9 @@ li {
  }
  
 
-
+ .playlist a:hover {
+    color: white;
+}
 
 /*------section top-button--------*/
 
@@ -203,7 +214,6 @@ li {
     padding-top: 25px;
 }
 
-.title {}
 
 
 .subtitle {
@@ -214,7 +224,7 @@ li {
 
 }
 
-/*section card*/
+/*-------------------------------------------------------------------------------------------------------section card*/
 
 
 .col-2 {
@@ -238,7 +248,11 @@ li {
 }
 
 
+.subtitle {
 
+    color:#606368;
+
+}
 
 
 /* Card base styles */
@@ -289,17 +303,15 @@ li {
 }
 
 /* Hover effect: the play icon appears and the image slightly zooms */
-.img-container:hover .play-icon {
+.card:hover .play-icon {
+
+    padding-bottom: 90px;
+    border-radius: 50%;
     opacity: 1;
     /* Mostra l'icona play */
 
 }
 
-.img-container:hover img {
-    transform: scale(1.05);
-    /* Leggero zoom sull'immagine */
-
-}
 
 
 .card p {
