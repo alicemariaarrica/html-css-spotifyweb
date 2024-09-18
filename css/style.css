@@ -1,4 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box: sizing 0;
+    border-box:0;
 
+}
 
 
 
@@ -16,17 +22,22 @@
 }
 
 
-.body {
+.body{
     overflow: hidden;
 }
 
-.container {
+
+.top{
     display: flex;
     background-color: #080b12;
     width: 100%;
-
+    height:100%;
 }
 
+.bottom{
+    height: 80px;
+}
+   
 .nav-col-2 {
     width: 200px;
     background-color: #000000;
@@ -39,6 +50,10 @@
     padding: 20px;
 }
 
+
+.container{
+    height: 100vh;
+}
 
 /*-------- section side-bar--------*/
 
