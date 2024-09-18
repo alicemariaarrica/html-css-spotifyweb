@@ -19,11 +19,8 @@
 
 }
 
-
-
-
-    .col-2{
-        width: 300px; 
+    .nav-col-2{
+        width: 200px; 
         background-color: #000000; 
 
     }
@@ -92,10 +89,11 @@ li{
 /*------section top-button--------*/
 
 .top-bar {
+    background-color: #000000;
     display: flex;
-    justify-content: flex-end; /* Allinea il pulsante sulla destra */
-    padding: 10px;
-    background-color: #141922; /* Colore di sfondo della barra superiore */
+    justify-content: flex-end; 
+    padding bottom: 20px;
+
     height: 100px;
 }
 
@@ -112,6 +110,18 @@ li{
 }
 
 
+/*section content */
+
+.content-title{
+
+font-size: 2rem;
+text-decoration: solid;
+color: white;
+padding-bottom: 20px;
+padding left: 50px;
+
+}
+
 /*section card*/
 
 *{
@@ -123,20 +133,54 @@ p{
     text-align: center;
 }
 
-.container{
+.content{
+
+display flex-wrap: ;
 display: flex;
 justify-content: space-evenly;
+background-color: #141922;
 }
 
 
 .card{
-    padding:;
-    text-align: center;
     width: 130px;
+    position: relative; /* Per il posizionamento assoluto dell'icona play */
+  
+    text-align: center;
+    overflow: hidden;
 }
 
+.img-container{
+position:relative; /*y*/
+display:inline-block; /*y*/
+
+}
 .card img {
     width: 100%; /* Imposta una larghezza fissa più piccola per l'immagine */
-    height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+
 }
 
+.card p{
+    color: white;
+}
+
+.img-container:hover .play-icon {
+    opacity: 1; /* L'icona diventa visibile al passaggio del mouse */
+}
+
+
+.card img:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); 
+
+
+  
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
