@@ -87,6 +87,7 @@
 
 .nav-col-2 {
     width: 220px;
+    height: 1730px;
     background-color: #000000;
 
 }
@@ -376,6 +377,7 @@
 .jd-container{
     background-color:#141922;
     flex-direction: column;
+    padding-bottom: 820px;
   
 }
 
