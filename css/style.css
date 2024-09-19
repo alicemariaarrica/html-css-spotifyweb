@@ -7,8 +7,6 @@
 }
 
 
-c
-
 
 :root {
 
@@ -60,6 +58,7 @@ c
     padding-top: 15px;
     color: #000000;
     background-color: #000000;
+    overflow: hidden;
 
 
 }
@@ -132,9 +131,6 @@ c
 
 
 
-
-
-
 .create a{
     text-align: start;
     font-size: 15px;
@@ -168,6 +164,7 @@ c
     flex-grow: 1;
     background-color: #141922;
     padding: 0px;
+    
 }
 
 
@@ -178,9 +175,9 @@ c
     justify-content: flex-end;
     padding-top: 15px;
     padding-bottom: 10px;
-
     border: 40px;
     height: 55px;
+    position: sticky;
 }
 
 .top-btn {
@@ -223,6 +220,8 @@ c
 
 /*------------------------section content ----------------*/
 
+
+
 .content-title {
 
     color: white;
@@ -250,12 +249,13 @@ c
 
 }
 
+
+
 /*-------------------------------------------------------------------------------------------------------section card*/
 
 
 .col-2 {
     flex: 1 1 calc((100% / 6) - 20px);
-    /* Ridimensiona automaticamente su schermi piccoli */
     max-width: calc((100% / 6) - 20px);
 }
 
@@ -281,7 +281,7 @@ c
 }
 
 
-/* Card base styles */
+
 .card {
     width: 200px;
     position: relative;
@@ -291,51 +291,18 @@ c
     padding: 10px;
 }
 
-/* Container for the image and play icon */
+
 .img-container {
     position: relative;
 }
 
-/* The album image */
+
 .card img {
     width: 100%;
     height: auto;
-   
     transition: transform 0.3s ease;
 
 }
-
-.play-icon img {
-    width: 50px;
-    
-    height: 50px;
-    background-color: transparent;
-    
-}
-
-/* Default hidden state for the play icon */
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    width: 50px;
-    /* Dimensione dell'icona play */
-    height: 50px;
-
-}
-
-/* Hover effect: the play icon appears and the image slightly zooms */
-.card:hover .play-icon {
-
-    padding-bottom: 90px;
-    opacity: 1;
-    /* Mostra l'icona play */
-
-}
-
 
 
 .card p {
@@ -343,13 +310,51 @@ c
 }
 
 
-.card:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+.title {
+    font-size: 14px;
+}
 
+
+/*---------------hover:albums--------------------*/
+
+
+.play-icon{
+    
+}
+
+.play-icon:hover {
+    border-radius: 10px;
 
 }
 
 
-.title {
-    font-size: 14px;
+
+
+
+/*----------------------------1100px------------------media-queries---------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+    .col-2 {
+        display: inline-block;
+        width: 25%;
+        max-width: 25%;
+    }
+}
+/*----------------------------700px------------------media-queries---------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+    .col-2 {
+        display: inline-block;
+        width: 50%;
+        max-width: 50%;
+    }
+}
+/*----------------------------600------------------media-queries---------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+    .col-2 {
+        display: inline-block;
+        width: 50%;
+        max-width: 50%;
+    }
 }
