@@ -39,125 +39,13 @@
     height: 80px;
 }
 
-.nav-col-2 {
-    width: 210px;
-    background-color: #000000;
-
-}
 
 
 .container {
     height: 100vh;
 }
 
-/*-------- section side-bar--------*/
-
-
-.sidebar {
-
-    padding-top: 15px;
-    color: #000000;
-    background-color: #000000;
-    overflow: hidden;
-
-
-}
-
-.menu{
-    display: flex;
-    flex-direction: column;
-   
-}
-
-.logo {
-
-    padding-left: 10px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    max-width: 160px;
-    background-color: #000000;
-}
-
-
-.menu-home img{
-    height: 20px;
-    margin-right: 10px;
-    /*y*/
-    color: white;
-
-}
-
-.menu-home a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    color: white;
-    padding-left: 15px;
-    padding-bottom: 15px;
-
-
-}
-
-
-.list-menu img{
-    height: 20px;
-    margin-right: 10px;
-    /*y*/
-   
-
-}
-
-.list-menu a{
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    color: #3c3c3c;
-
-}
-
-.list-menu a:hover {
-    color: white;
-}
-
-
-.title-playlist a{
-    color: white;
-    padding-top: 10px;
-    font-weight: bold;
-
-
-}
-
-
-
-.create a{
-    text-align: start;
-    font-size: 15px;
-    font-weight:bolder;
-    text-decoration: none;
-    color:#3c3c3c;
-   
-    
-}
-
-.playlist li a{
-
-    padding-bottom: 20px;
-    text-align: start;
-    font-size: 13px;
-    font-weight:bolder;
-    text-decoration: none;
-    color: #3c3c3c;
-    
- }
- 
-
- .playlist a:hover {
-    color: white;
-}
-
-/*------section top-button--------*/
+/*------section top-bar--------*/
 
 
 .col-8 {
@@ -176,7 +64,7 @@
     padding-top: 15px;
     padding-bottom: 10px;
     border: 40px;
-    height: 55px;
+    height: 70px;
     position: sticky;
 }
 
@@ -196,6 +84,132 @@
     border-color: white;
 }
 
+/*----------------------------------------------------nav-bar*---------*/
+
+.nav-col-2 {
+    width: 220px;
+    background-color: #000000;
+
+}
+
+
+.sidebar {
+
+    padding-top: 15px;
+    color: #000000;
+    background-color: #000000;
+    overflow: hidden;
+    height: 1000px
+
+    
+
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo {
+
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    max-width: 165px;
+    background-color: #000000;
+}
+
+
+.menu-home img{
+    height: 20px;
+    margin-right: 10px;
+    /*y*/
+    color: white;
+
+}
+
+.menu-home a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top:5px;
+
+
+}
+
+
+.list-menu img{
+    height: 20px;
+    margin-right: 10px;
+    
+   
+
+}
+
+.list-menu a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #3c3c3c;
+    padding-top: 5px;
+
+}
+
+.list-menu a:hover {
+    color: white;
+}
+
+
+.title-playlist{
+    padding-top: 20px;
+
+}
+
+.title-playlist a{
+    color: white;
+    padding-top: 5px;
+    font-weight: bold;
+
+
+}
+
+
+
+.create a{
+    text-align: start;
+    font-size: 15px;
+    font-weight:bolder;
+    text-decoration: none;
+    color:#3c3c3c;
+   
+    
+}
+
+
+.playlist li a{
+
+    padding-bottom: 20px;
+    text-align: start;
+    font-size: 13px;
+    font-weight:bolder;
+    text-decoration: none;
+    color: #3c3c3c;
+    
+ }
+ 
+
+ .playlist a:hover {
+    color: white;
+}
+
+
 
 /*---------------------------section choice-menu-------------*/
 
@@ -210,7 +224,7 @@
 .content-choice-menu a {
     color: #3c3c3c;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -225,7 +239,7 @@
 .content-title {
 
     color: white;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 700;
     padding-bottom: 25px;
     padding-left: 25px;
@@ -251,7 +265,7 @@
 
 
 
-/*-------------------------------------------------------------------------------------------------------section card*/
+/*-------------------------------------section card*/
 
 
 .col-2 {
@@ -288,7 +302,7 @@
     text-align: center;
     overflow: hidden;
     background-color:
-    padding: 10px;
+    
 }
 
 
@@ -300,7 +314,7 @@
 .card img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease;
+
 
 }
 
@@ -328,6 +342,54 @@
 }
 
 
+/*-----------------john doe section---------------------*/
+
+.jd{
+    background-color:#141922;
+  
+}
+
+.jd-title{
+
+        color: white;
+        font-size: 21px;
+        font-weight: 700;
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-top: 45px;
+    
+
+}
+
+.suggestions{
+    color: #606368;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-left: 25px;
+
+}
+
+
+
+.jd-container{
+    background-color:#141922;
+    flex-direction: column;
+  
+}
+
+
+.jd-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left
+    background-color: #141922;
+}
+
+.jd-col-2{
+    padding-left: 20px;
+    padding-top: 30px;
+}
 
 
 
@@ -349,7 +411,7 @@
         max-width: 50%;
     }
 }
-/*----------------------------600------------------media-queries---------------------------------------*/
+/*----------------------------600px------------------media-queries---------------------------------------*/
 
 @media screen and (max-width: 1100px) {
     .col-2 {
