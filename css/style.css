@@ -99,6 +99,7 @@
     background-color: #000000;
     overflow: hidden;
     height: 1000px
+    
 
     
 
@@ -311,7 +312,7 @@
 
 
 .card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 
 
@@ -345,6 +346,7 @@
 
 .jd{
     background-color:#141922;
+    
   
 }
 
@@ -409,38 +411,49 @@
         width: 50%;
         max-width: 50%;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .content-title {
 
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        text-align: center;
+
+        .content-choice-menu a {
+            
+            
+            font-size: 10px;
+            
+        }
+    
+
+    .playlist {
+
         
+        font-size: 10px;
+        
+    
     }
 }
 
 /*----------------------------600px------------------media-queries---------------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .col-2 {
         display: inline-block;
         width: 50%;
         max-width: 50%;
     }
-}
+
+ 
+    .content-choice-menu a {
+        
+        
+        font-size: 8px;
+        
+   }
 
 
-@media screen and (max-width: 600px) {
-    .content-title {
+    .playlist {
 
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        text-align: center;
+        
+        font-size: 10px;
+        
     
     }
 }
-
