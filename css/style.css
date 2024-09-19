@@ -42,7 +42,7 @@ c
 }
 
 .nav-col-2 {
-    width: 195px;
+    width: 210px;
     background-color: #000000;
 
 }
@@ -64,6 +64,12 @@ c
 
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+   
+}
+
 .logo {
 
     padding-left: 10px;
@@ -74,44 +80,60 @@ c
 }
 
 
-
-.menu{
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-}
-
-
-.menu li a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: #3c3c3c;
-    padding-left: 25px;
-}
-
-
-.menu li img {
+.menu-home img{
     height: 20px;
     margin-right: 10px;
     /*y*/
+    color: white;
+
+}
+
+.menu-home a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+
+}
+
+
+.list-menu img{
+    height: 20px;
+    margin-right: 10px;
+    /*y*/
+   
+
+}
+
+.list-menu a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
     color: #3c3c3c;
+
+}
+
+.list-menu a:hover {
+    color: white;
 }
 
 
-.menu ul {
-    list-style-type: none;
-    margin-bottom: 100px;
-    color: white
+.title-playlist a{
+    color: white;
+    padding-top: 10px;
+    font-weight: bold;
+
+
 }
 
 
-li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 10px;
-    color: white
-}
+
+
+
 
 .create a{
     text-align: start;
@@ -119,15 +141,19 @@ li {
     font-weight:bolder;
     text-decoration: none;
     color:#3c3c3c;
+   
     
 }
 
 .playlist li a{
+
+    padding-bottom: 20px;
     text-align: start;
     font-size: 13px;
     font-weight:bolder;
     text-decoration: none;
-
+    color: #3c3c3c;
+    
  }
  
 
@@ -174,7 +200,7 @@ li {
 }
 
 
-/*------------section choice-menu-------------*/
+/*---------------------------section choice-menu-------------*/
 
 .content-choice-menu {
     display: flex;
@@ -195,16 +221,16 @@ li {
     color: white;
 }
 
-/*-------------section content ----------------*/
+/*------------------------section content ----------------*/
 
 .content-title {
 
     color: white;
     font-size: 22px;
     font-weight: 700;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     padding-left: 25px;
-    padding-top: px;
+    padding-top: 40px;
 
 }
 
@@ -257,12 +283,11 @@ li {
 
 /* Card base styles */
 .card {
-    width: 180px;
+    width: 200px;
     position: relative;
     text-align: center;
     overflow: hidden;
     background-color:
-        border-radius: 8px;
     padding: 10px;
 }
 
@@ -275,17 +300,17 @@ li {
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+   
     transition: transform 0.3s ease;
 
 }
 
 .play-icon img {
     width: 50px;
-    /* Imposta la dimensione dell'icona */
+    
     height: 50px;
     background-color: transparent;
-    /* Assicurati che lo sfondo sia trasparente */
+    
 }
 
 /* Default hidden state for the play icon */
@@ -306,7 +331,6 @@ li {
 .card:hover .play-icon {
 
     padding-bottom: 90px;
-    border-radius: 50%;
     opacity: 1;
     /* Mostra l'icona play */
 
